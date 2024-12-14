@@ -1,0 +1,355 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.neonblack {
+  color: #fff;
+  text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 20px #0a0a0a,
+               0 0 30px #0a0a0a,
+               0 0 40px #0a0a0a,
+               0 0 50px #0a0a0a,
+               0 0 60px #0a0a0a;
+}
+
+
+
+
+
+.neondorado {
+  color: #fff;
+  text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 20px #f7f305,
+               0 0 30px #c9eb09,
+               0 0 40px #eafa06,
+               0 0 50px #e7f705e8,
+               0 0 60px #f3f705;
+}
+
+
+.neon {
+  color: #fff;
+  text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 20px #ff00de,
+               0 0 30px #ff00de,
+               0 0 40px #ff00de,
+               0 0 50px #ff00de,
+               0 0 60px #ff00de;
+}
+
+main {
+  background: rgb(137,11,244);
+background: linear-gradient(45deg, rgba(137,11,244,1) 0%, rgba(242,61,98,1) 100%); 
+}
+
+/* Estilos para el header */
+header {
+  background-color: #0f0e0f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  height: 4vw;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #f5eeee;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+nav a:hover::before {
+  width: 200px;
+  height: 200px;
+}
+
+/* Estilos para la sección destacada */
+.destacado {
+  /* background-color: #f9a03f; */
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+}
+
+.destacado::before {
+  content: "";
+  background-image: url('imagen-fondo.jpg');
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.destacado h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.destacado p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Estilos para la sección del slider */
+.slider {
+  /* position: relative; */
+  padding: 1vh 1vw 1vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.slider-item img {
+  width: 90%;
+  border-radius: 80px;
+  border: thick double #32a1ce;
+}
+
+.slider-item p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  padding: 10px;
+}
+
+
+#cambio {
+  width: 82%;
+ }
+
+/* .slider-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+} */
+
+/* .prev,
+.next {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+} */
+
+/* Animaciones usando pseudo-clases */
+.slider-item:nth-child(2):not(:last-child) {
+  animation: slideRight 1s ease-in-out forwards;
+}
+
+.slider-item:last-child:not(:nth-child(2)) {
+  animation: slideLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Estilos para la sección de descripción */
+.descripcion {
+  
+  text-align: center;
+  padding: 50px;
+}
+
+.descripcion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.descripcion p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* formulario*/
+#contact {
+
+  /* background-color:#9191b8; */
+  display: grid;
+  grid-template: auto 100px 7 700px;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+
+}
+
+
+
+#contact form { 
+  padding: 20px;
+  color: white;
+  display: grid;
+  gap: 15px;
+  grid-template: auto / auto;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+
+
+#contact form input, 
+#contact form textarea {
+  padding: 20px 10px ;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+
+
+
+}
+
+
+#contact .social-networks {
+  justify-self: center;
+  padding: 10px 0;
+}
+
+#contact .social-networks a {
+  color: white;
+  
+}
+
+
+#contact form input[type="submit"] {
+  background-color: #67ca50;
+  font-weight: bold;
+  font-size: 28px;
+
+
+
+ /* boton de wasap
+
+ .Whatsapp-boton {
+  background-color:#2e6329;
+  border: 1px solid #fff;
+  position:fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+
+.Whatsapp-boton:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton {
+  width: 80px;
+  transition: ease 1s;
+}
+
+@keyframes efecto {
+  0%{
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100%{
+      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+*/
+
+
+
+
+
+ /*Estilos para el footer  */
+ footer {
+  font-family: "Playwrite TZ Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+   }
+
+   

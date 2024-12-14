@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title class="neon">EL DURO </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Playwrite+TZ+Guides&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="IMAGENES/admin.png" alt="Logo de mi Página Web">
+      <h1 class="neondorado">EL DURO </h1>
+    </div>
+    <nav>
+      <ul>
+        <li class="neon"><a href="#home">Inicio</a></li>
+        <li class="neon"><a href="#project">Proyecto </a></li>
+        <li class="neon"><a href="https://wa.me/3203550490?text=Quiero%20comprar%20un%20JABONZOTE" target="_blank">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="destacado" id="home">
+      <h2 class="neonblack">&#128680 ¡Bienvenidos! &#x1F6A8</h2>
+      <p>SOMOS UNA ALTERNATIVA &#127758 ENFOCADA EN LOS NEGOCIOS SOSTENIBLES Y CIRCULARES ............... &#127793
+          </p>
+      <a href="#" class="btn">Ver más</a>
+    </section>
+    <section class="slider">
+      <div class="grid-container">
+        <div class="slider-item">
+          <img src="IMAGENES/Manzana v.png" alt="Imagen 1">
+          <p>Si prefieres los aromas frutales, el jabón de manzana verde es ideal. Además de limpiar profundamente, su fragancia a manzanas verdes te brindará una sensación refrescante y energizante.</p>
+        </div>
+        <div class="slider-item">
+          <img src="IMAGENES/Elduro.png" alt="Imagen 2">
+          <p>Productos el duro son ideales para pieles sensibles gracias a su fórmula suave y libre de químicos agresivos, ademas ofrecemos frescos y relajante aromas para disfrutar durante tu rutina de los deberes de la vida diaria.</p>
+        </div>
+        <div class="slider-item" >
+          <img src="IMAGENES/Rosas.png" alt="Imagen 3" id="cambio">
+          <p>Si buscas una experiencia sensorial única al momento de lavar tu ropa, el jabón de flores es perfecto para ti. Su fragancia sutil y delicada te transportará a un jardín lleno de aromas naturales.</p>
+        </div>
+      </div>
+      <!-- <div class="slider-controls">
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+      </div> -->
+    </section>
+    <section class="descripcion" id="project">
+      <h2> <span class="neon"> &#10024 &#10024 LIMPIA HASTA LOS PECADOS DEL MUNDO &#10024 &#10024 </span> </h2>
+      <p>Cuando se trata de jabón en barra, no hay otro como <span class="neonblack">EL DURO</span>, somos la primera empresa de fabricación de jabones en la región. Nuestro jabón es económico y súper limpiador, con un proceso de producción innovador y sostenible, que nos permite ofrecerte un producto de gran calidad a un precio muy económico y competitivo, aprovechando los recursos que se puedan adquirir de forma local generando un ciclo económico en la región.
+        Comprando este producto USTED está ayudando a generar nuevos campos de economía en la región de Arauca, de forma indirecta pasa hacer parte de un motor de desarrollo económico para nuestra frontera, con sólo pasar un par de segundos lavando ropa.</p>
+    </section>
+    
+    <!-- boton de wasap
+    
+    <div class="Whatsapp-boton">
+      
+      <a href="https://wa.me/3203550490?text=Quiero%20comprar%20un%20JABONZOTE">
+      <img class="boton" src="IMAGENES/icono.png" alt="">
+    </a>
+    
+  </div>
+  formulario-->
+  
+  <section id="contact">
+  <form action="">
+    <h2> Contactame</h2>
+    
+    <label for="name"> Nombre</label>
+    <input type="text"/>
+    
+    <label for="name"> Subjects </label>
+    <input type="text"/>
+    
+    <label for="name"> Text </label>
+    <textarea name="" id="" cols="100" rows="10"></textarea>
+    
+    <input type="submit" value="Enviar">
+  </form>
+  
+  <div class="social-networks">
+    <a href="https://x.com" target="_blank"> twitter</a>
+    <a href="https://wa.me/3203550490?text=Quiero%20comprar%20un%20JABONZOTE" target="_blank"> wasap</a>
+    <a href="https://web.facebook.com/?_rdc=1" target="_blank" > faceebook</a>
+  </div>
+  
+</section>
+
+
+
+
+<!-- el footer-->
+<footer>
+  <p> &#128206 Derechos reservados e invertidos o regalados no sabemos © 2024 CREADO POR &#x1F680 &#128640 &#128640 </p>
+</footer>
+
+</main>
+
+
+
+
+
+<!-- script-->
+
+<script>
+  function generateBalls() {
+    for (var i = 0; i < Math.floor(window.innerWidth / 20); i++) {
+      $(".gooey-animations").append(`
+      <div class="ball"></div>
+    `);
+      var colors = ["#28323B", "#FFA036"];
+      $(".ball")
+        .eq(i)
+        .css({
+          bottom: "0px",
+          left: Math.random() * window.innerWidth - 100,
+          "animation-delay": Math.random() * 5 + "s",
+          transform: "translateY(" + Math.random() * 10 + "px)",
+          "background-color": colors[i % 2]
+        });
+    }
+  }
+  generateBalls();
+   
+  window.addEventListener("resize", function (e) {
+    $(".gooey-animations .ball").remove();
+    generateBalls();
+  });
+   
+  </script>
+  
+</body>
+</html>
