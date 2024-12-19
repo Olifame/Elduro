@@ -1,8 +1,16 @@
 /* Reset CSS */
 * {
   margin: 0;
-  padding: 0;
+  padding: 0;  
 }
+
+#sign_in {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
 
 .neonblack {
   color: #fff;
@@ -44,7 +52,7 @@
 
 main {
   background: rgb(137,11,244);
-background: linear-gradient(45deg, rgba(137,11,244,1) 0%, rgba(242,61,98,1) 100%); 
+  background: linear-gradient(45deg, rgba(137,11,244,1) 0%, rgba(242,61,98,1) 100%); 
 }
 
 /* Estilos para el header */
@@ -97,7 +105,7 @@ nav a:hover::before {
 
 /* Estilos para la sección destacada */
 .destacado {
-  /* background-color: #f9a03f; */
+  
   color: #fff;
   text-align: center;
   padding: 50px;
@@ -138,7 +146,7 @@ nav a:hover::before {
 
 /* Estilos para la sección del slider */
 .slider {
-  /* position: relative; */
+  
   padding: 1vh 1vw 1vh;
 }
 
@@ -164,7 +172,7 @@ nav a:hover::before {
 .slider-item p {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
-  /* position: absolute; */
+  
   bottom: 0;
   left: 0;
   width: 90%;
@@ -176,30 +184,6 @@ nav a:hover::before {
   width: 82%;
  }
 
-/* .slider-controls {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-} */
-
-/* .prev,
-.next {
-  background-color: #fff;
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-right: 20px;
-  cursor: pointer;
-  font-size: 1.2rem;
-} */
-
-/* Animaciones usando pseudo-clases */
 .slider-item:nth-child(2):not(:last-child) {
   animation: slideRight 1s ease-in-out forwards;
 }
@@ -243,10 +227,9 @@ nav a:hover::before {
   margin-bottom: 30px;
 }
 
-/* formulario*/
+/* formulario
 #contact {
 
-  /* background-color:#9191b8; */
   display: grid;
   grid-template: auto 100px 7 700px;
   justify-content: center;
@@ -300,33 +283,6 @@ nav a:hover::before {
   font-weight: bold;
   font-size: 28px;
 
-
-
- /* boton de wasap
-
- .Whatsapp-boton {
-  background-color:#2e6329;
-  border: 1px solid #fff;
-  position:fixed;
-  z-index: 999;
-  border-radius: 50%;
-  bottom: 20px;
-  right: 25px;
-  padding: 25px;
-  transition: ease 0.3s;
-  animation: efecto 1.2s infinite;
-}
-
-.Whatsapp-boton:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-.boton {
-  width: 80px;
-  transition: ease 1s;
-}
-
 @keyframes efecto {
   0%{
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
@@ -335,13 +291,60 @@ nav a:hover::before {
       box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
   }
 }
+
+
 */
+ /*ACCESO  */
 
 
 
+h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
 
 
- /*Estilos para el footer  */
+input[type="text"], input[type="password"] {
+  width: 100%; 
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+
+}
+
+input[type="button"] {
+  width: 100%; 
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #4CAF50;
+   color: white; 
+   font-size: 16px; 
+   cursor: pointer;
+}
+
+input[type="button"]:hover { 
+  background-color: #45a049; }
+  
+
+/*Estilos para el footer  */
+
+
+
  footer {
   font-family: "Playwrite TZ Guides", cursive;
   font-weight: 400;
@@ -351,5 +354,4 @@ nav a:hover::before {
   text-align: center;
   padding: 20px;
    }
-
-   
+  
